@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  client:
+    build: /frontend
+    volumes:
+      - ./client:/app
+    ports:
+      - '3000:3000'
+  server:
+    build: /backend
+    volumes:
+      - ./server:/app
+    ports:
+      - '8000:8000'
+    stdin_open: true
+
