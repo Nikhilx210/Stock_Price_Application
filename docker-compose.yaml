@@ -1,15 +1,15 @@
 version: '3.7'
 services:
-  client:
+  frontend:
     build: /frontend
     volumes:
-      - ./client:/app
+      - ./frontend:/app
     ports:
       - '3000:3000'
-  server:
+  backend:
     build: /backend
     volumes:
-      - ./server:/app
+      - ./backend:/app
     ports:
       - '8000:8000'
     stdin_open: true
