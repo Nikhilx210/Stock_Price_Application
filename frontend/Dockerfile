@@ -1,4 +1,4 @@
-FROM node:lts-slim
+FROM node:latest
 
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY package.json .
 
 RUN npm install
 
-RUN npm install react-scripts
+RUN npm install -g react-scripts
 
 COPY . .
 
