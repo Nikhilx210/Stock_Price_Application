@@ -25,20 +25,22 @@ A full-stack web application that predicts stock prices using LSTM (Long Short-T
 - Context API for state management
 
 ## Project Structure
+```
 Stock_Price_Application/
 ├── backend/
-│ ├── server/
-│ │ ├── stock.py # LSTM model and prediction logic
-│ │ └── ...
-│ ├── api/ # Django REST API endpoints
-│ ├── manage.py
-│ └── db.sqlite3
+│   ├── server/
+│   │   ├── stock.py  # LSTM model and prediction logic
+│   │   └── ...
+│   ├── api/  # Django REST API endpoints
+│   ├── manage.py
+│   └── db.sqlite3
 │
 └── frontend/
-├── src/
-├── public/
-├── package.json
-└── README.md
+    ├── src/
+    ├── public/
+    ├── package.json
+    └── README.md
+```
 
 
 ## Installation
